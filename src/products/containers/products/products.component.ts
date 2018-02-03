@@ -19,7 +19,7 @@ import * as fromStore from '../../store';
         </a>
       </div>
       <div class="products__list">
-        <div *ngIf="!((pizzas)?.length)">
+        <div *ngIf="!((pizzas$ | async)?.length)">
           No pizzas, add one to get started.
         </div>
         <pizza-item
@@ -36,8 +36,6 @@ export class ProductsComponent implements OnInit {
   constructor(private store: Store<fromStore.ProductsState>) {}
 
   ngOnInit() {
-    // NOT SURE
     this.pizzas$ = this.store.select(fromStore.getPizzas);
-    // this.store.dispatch(new fromStore.LoadPizzas({}));
   }
 }

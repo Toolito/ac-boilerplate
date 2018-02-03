@@ -46,18 +46,33 @@
       "id": 2
     },
     {
-      "name": "Paaa",
+      "name": "fat",
       "toppings": [
+        "anchovy",
+        "mozzarella",
         "pepper",
-        "basil"
+        "pepperoni",
+        "mushroom",
+        "bacon",
+        "basil",
+        "olive",
+        "sweetcorn",
+        "chili",
+        "onion",
+        "tomato"
       ],
       "sizes": [],
       "id": 3
     },
     {
-      "name": "fdsfds",
+      "name": "FIIT",
       "toppings": [
-        "basil"
+        "bacon",
+        "basil",
+        "sweetcorn",
+        "pepperoni",
+        "mozzarella",
+        "mushroom"
       ],
       "sizes": [],
       "id": 4

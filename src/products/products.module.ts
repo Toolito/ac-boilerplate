@@ -24,14 +24,17 @@ export const ROUTES: Routes = [
   {
     path: '',
     component: fromContainers.ProductsComponent,
+    canActivate: [fromGuards.PizzasGuard]
   },
   {
     path: ':id',
     component: fromContainers.ProductItemComponent,
+    canActivate: [fromGuards.PizzasGuard, fromGuards.ToppingsGuard]
   },
   {
     path: 'new',
     component: fromContainers.ProductItemComponent,
+    canActivate: [fromGuards.PizzasGuard, fromGuards.ToppingsGuard]
   },
 ];
 @NgModule({
